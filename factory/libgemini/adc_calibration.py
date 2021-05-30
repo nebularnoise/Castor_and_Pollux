@@ -216,7 +216,7 @@ def run(
     )
     log.info(f"Remeasured gain={gain_error:.3f}, offset={offset_error:.1f}")
 
-    sol_.set_voltage(strategy.sol_channel, 0)
+    sol_.set_voltage(0, strategy.sol_channel)
     log.success("Done")
     gem.close()
 
